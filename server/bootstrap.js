@@ -1,6 +1,6 @@
 
 Meteor.startup(function () {
   if (Meteor.users.find().count() === 0) {
-    Meteor.users.insert({name: 'test', password: 'test'});
+   // Meteor.createUser({username:'test', password:'test'}, {}, function(error){ console.error(error); });
   }
 });
